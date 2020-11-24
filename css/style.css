@@ -21,4 +21,91 @@ ul {
     list-style: none;
     justify-content: space-around;
   }
+  html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #44464a;
+    background: cornsilk;
+  }
+  * {
+    box-sizing: inherit;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: pink;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: #44464a;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Holtwood One SC", serif;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    /* max-width: 300px;
+    display: block; */
+  }
+  .wrapper {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .card {
+    text-align: center;
+    background: lightblue;
+    padding: 16px;
+  }
+  main {
+    background: wheat;
+    padding: 16px;
+  }
+  @media (min-width: 700px) {
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 16px;
+      margin-bottom: 16px;
+    }
+  }
+  @media (min-width: 850px) {
+    .card-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 16px;
+    }
+  }
+  @media (min-width: 1080px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    header,
+    footer {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      background: #fff;
+    }
+    main {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    .gallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
   
+  .aside-menu {
+    display: none;
+  }
